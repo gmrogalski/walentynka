@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#fbe0e3">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="description" content="Mała niespodzianka. Z wielką miłością.">
+  <meta property="og:title" content="Mam do Ciebie jedno pytanie…">
+  <meta property="og:description" content="Ta mała niespodzianka jest tylko dla Ciebie.">
+  <meta property="og:type" content="website">
+  <title>Dla Ciebie, Kochanie</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23bb3152' d='M12 21 3 12C-4 3 8-2 12 5 16-2 28 3 21 12Z'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <img class="paper" src="paper.webp" alt="" aria-hidden="true">
+  <canvas id="hearts" aria-hidden="true"></canvas>
+  <div class="page">
+    <header class="topline" data-avoid><span class="tiny-heart" aria-hidden="true">♥</span><span>Mała niespodzianka. Wielka miłość.</span></header>
+    <main>
+      <section id="question" class="scene" aria-labelledby="title">
+        <p class="eyebrow" id="eyebrow" data-avoid>Dla mojej ulubionej osoby</p>
+        <h1 id="title" tabindex="-1" data-avoid>Zostaniesz moją<br><em>walentynką?</em></h1>
+        <p class="copy" id="copy" data-avoid>Bo z Tobą nawet zwykły dzień jest wyjątkowy.</p>
+        <div class="actions">
+          <button id="yes" type="button" class="yes" data-avoid><span id="yes-label">Tak</span><span aria-hidden="true">♥</span></button>
+          <div class="no-slot"><button id="no" type="button" class="no">Nie</button></div>
+        </div>
+        <p id="tease" class="tease" role="status" data-avoid></p>
+        <div class="progress" aria-label="Pytanie 1 z 3" id="progress" data-avoid><span class="active"></span><span></span><span></span></div>
+      </section>
+      <section id="final" class="scene final" hidden aria-labelledby="final-title">
+        <div class="love-mark" aria-hidden="true">♥</div>
+        <p class="eyebrow">Moja ulubiona odpowiedź.</p>
+        <h1 id="final-title" tabindex="-1">Zawsze wybieram<br><em>Ciebie.</em></h1>
+        <p class="love-note">Na wielkie przygody i na zwykłe wtorki.<br>Na wspólny śmiech i na spokojne wieczory.<br><strong>Na dziś. Na jutro. Na całe życie.</strong></p>
+        <p class="love-you">Kocham Cię, moja Walentynko.</p>
+        <p class="signature">Twój Grzegorz</p>
+        <button type="button" id="more" class="more">Jeszcze trochę serduszek ♥</button>
+      </section>
+      <noscript><p class="noscript">Włącz JavaScript, żeby otworzyć tę niespodziankę.</p></noscript>
+    </main>
+    <footer data-avoid><span>Tylko Ty. Zawsze Ty.</span><button type="button" id="restart" hidden>Jeszcze raz?</button></footer>
+  </div>
+</body>
+</html>
